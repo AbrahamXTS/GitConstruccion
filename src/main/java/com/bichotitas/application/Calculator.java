@@ -32,9 +32,4 @@ public class Calculator {
 
         return dividendNumber.doubleValue() / dividerNumber.doubleValue();
     }
-
-    public static void main(String[] args) {
-        Number result = Calculator.divideNumbers(0.5, 10);
-        System.out.println(result);
-    }
 }
