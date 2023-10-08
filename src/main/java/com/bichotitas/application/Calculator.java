@@ -15,21 +15,14 @@ public class Calculator {
 
     /**
      * This method provides the result of division between two numbers. If the
-     * divisor is the number 0, the exception {@link ArithmeticException} will be
-     * thrown
+     * divisor is the number 0, the result will be "Infinity".
      * 
-     * @param dividerNumber  The number that divides the dividend in the operation
-     * @param dividendNumber The number that is divided in the operation
+     * @param divisor  The number that divides the dividend in the operation
+     * @param dividend The number that is divided in the operation
      * @see Number
-     * @throws ArithmeticException
      * @return The result fo dividing the dividend by the divisor
      */
-    public static Number divideNumbers(Number dividendNumber, Number dividerNumber) throws ArithmeticException {
-
-        if ((int) dividendNumber == 0) {
-            throw new ArithmeticException();
-        }
-
-        return dividendNumber.doubleValue() / dividerNumber.doubleValue();
+    public static Number divideNumbers(Number dividend, Number divisor) {
+        return dividend.doubleValue() / divisor.doubleValue();
     }
 }
