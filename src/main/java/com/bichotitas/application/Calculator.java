@@ -3,6 +3,17 @@ package com.bichotitas.application;
 public class Calculator {
 
     /**
+     * @param addend1 The first addend in the operation.
+     * @param addend2 The second addend in the operation.
+     * @return Sum - The final result obtained after performing addition.
+     *
+     * @see Number
+     */
+    public static Number addNumbers(Number addend1, Number addend2) {
+        return addend1.doubleValue() + addend2.doubleValue();
+    }
+
+    /**
      * @param minuend    The number from which we subtract the other number.
      * @param subtrahend The number which is subtracted from the minuend.
      * @return difference - The final result obtained after performing subtraction.
@@ -49,6 +60,17 @@ public class Calculator {
     }
 
     /**
+     * @param radicand This is the number or expression inside the radical from which the root is being calculated.
+     * @param index The index represents the degree of the root. For instance, in a fourth root (∜), the index is 4.
+     * @return root - Returns the root with the degree of the given index of a numerical value
+     * 
+     * @see Number
+     */
+    public static Number nthRoot(Number radicand, Number index){
+        Number exponent = 1.0 / index.doubleValue();
+        return Math.pow(radicand.doubleValue(), exponent.doubleValue());
+    }
+        /**
      * 
      * @param dividend The number that is divided in the operation
      * @param divisor The number that divides the dividend in the operation
@@ -59,4 +81,5 @@ public class Calculator {
     public static Number moduloNumbers(Number dividend, Number divisor) {
         return dividend.doubleValue() % divisor.doubleValue();
     }
+
 }
