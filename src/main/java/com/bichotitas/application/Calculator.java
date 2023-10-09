@@ -57,9 +57,6 @@ public class Calculator {
      * @see Number
      */
     public static Number moduloNumbers(Number dividend, Number divisor) {
-        if (divisor.doubleValue() == 0) {
-            throw new ArithmeticException("Division by zero is not allowed.");
-        }
         return dividend.doubleValue() % divisor.doubleValue();
     }
 }
