@@ -55,7 +55,8 @@ public class Calculator {
      * 
      * @see Number
      */
-    public static Number NthRoot(Number radicand, Number index){
-        return Math.pow(radicand.doubleValue(), 1.0/index.doubleValue());
+    public static Number nthRoot(Number radicand, Number index){
+        Number exponent = 1.0 / index.doubleValue();
+        return Math.pow(radicand.doubleValue(), exponent.doubleValue());
     }
 }
