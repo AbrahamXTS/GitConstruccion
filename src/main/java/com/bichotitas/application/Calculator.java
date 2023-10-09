@@ -36,4 +36,5 @@ public class Calculator {
     public static Number multiplyNumbers(Number factor1, Number factor2) {
         return factor1.doubleValue() * factor2.doubleValue();
     }
+    
 }
