@@ -47,4 +47,19 @@ public class Calculator {
     public static Number pow(Number base, Number exponent) {
         return Math.pow(base.doubleValue(), exponent.doubleValue());
     }
+
+    /**
+     * 
+     * @param dividend The number that is divided in the operation
+     * @param divisor The number that divides the dividend in the operation
+     * @throws ArithmeticException If the divisor is zero.
+     * @return The result of calculating the modulo of the dividend by the divisor
+     * @see Number
+     */
+    public static Number moduloNumbers(Number dividend, Number divisor) {
+        if (divisor.doubleValue() == 0) {
+            throw new ArithmeticException("Division by zero is not allowed.");
+        }
+        return dividend.doubleValue() % divisor.doubleValue();
+    }
 }
