@@ -3,6 +3,17 @@ package com.bichotitas.application;
 public class Calculator {
 
     /**
+     * @param addend1 The first addend in the operation.
+     * @param addend2 The second addend in the operation.
+     * @return Sum - The final result obtained after performing addition.
+     *
+     * @see Number
+     */
+    public static Number addNumbers(Number addend1, Number addend2) {
+        return addend1.doubleValue() + addend2.doubleValue();
+    }
+
+    /**
      * @param minuend    The number from which we subtract the other number.
      * @param subtrahend The number which is subtracted from the minuend.
      * @return difference - The final result obtained after performing subtraction.
