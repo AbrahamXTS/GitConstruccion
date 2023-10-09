@@ -47,4 +47,16 @@ public class Calculator {
     public static Number pow(Number base, Number exponent) {
         return Math.pow(base.doubleValue(), exponent.doubleValue());
     }
+
+    /**
+     * @param radicand This is the number or expression inside the radical from which the root is being calculated.
+     * @param index The index represents the degree of the root. For instance, in a fourth root (∜), the index is 4.
+     * @return root - Returns the root with the degree of the given index of a numerical value
+     * 
+     * @see Number
+     */
+    public static Number nthRoot(Number radicand, Number index){
+        Number exponent = 1.0 / index.doubleValue();
+        return Math.pow(radicand.doubleValue(), exponent.doubleValue());
+    }
 }
