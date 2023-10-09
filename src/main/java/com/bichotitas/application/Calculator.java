@@ -25,4 +25,5 @@ public class Calculator {
     public static Number divideNumbers(Number dividend, Number divisor) {
         return dividend.doubleValue() / divisor.doubleValue();
     }
+    
 }
