@@ -25,4 +25,16 @@ public class Calculator {
     public static Number divideNumbers(Number dividend, Number divisor) {
         return dividend.doubleValue() / divisor.doubleValue();
     }
+    
+    /**
+     * @param factor1 The first number to be multiplied.
+     * @param factor2 The second number to be multiplied.
+     * @return product - The result obtained after performing multiplication.
+     *
+     * @see Number
+     */
+    public static Number multiplyNumbers(Number factor1, Number factor2) {
+        return factor1.doubleValue() * factor2.doubleValue();
+    }
+    
 }
