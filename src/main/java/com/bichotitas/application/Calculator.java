@@ -77,7 +77,7 @@ public class Calculator {
      * @return The result of calculating the modulo of the dividend by the divisor
      * @see Number
      */
-    public static Number moduloNumbers(Number dividend, Number divisor) {
+    public static Number moduloNumbers(Number dividend, Number divisor) throws ArithmeticException {
         return dividend.doubleValue() % divisor.doubleValue();
     }
 
