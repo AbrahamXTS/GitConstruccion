@@ -70,4 +70,15 @@ public class Calculator {
         Number exponent = 1.0 / index.doubleValue();
         return Math.pow(radicand.doubleValue(), exponent.doubleValue());
     }
+        /**
+     * 
+     * @param dividend The number that is divided in the operation
+     * @param divisor The number that divides the dividend in the operation
+     * @return The result of calculating the modulo of the dividend by the divisor
+     * @see Number
+     */
+    public static Number moduloNumbers(Number dividend, Number divisor) throws ArithmeticException {
+        return dividend.doubleValue() % divisor.doubleValue();
+    }
+
 }
