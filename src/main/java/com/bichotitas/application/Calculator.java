@@ -74,7 +74,6 @@ public class Calculator {
      * 
      * @param dividend The number that is divided in the operation
      * @param divisor The number that divides the dividend in the operation
-     * @throws ArithmeticException If the divisor is zero.
      * @return The result of calculating the modulo of the dividend by the divisor
      * @see Number
      */
